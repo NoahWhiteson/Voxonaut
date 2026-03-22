@@ -112,7 +112,7 @@ void main() {
 
 int main() {
     int sw = 800, sh = 600;
-    InitWindow(sw, sh, "Planetary Engineering");
+    InitWindow(sw, sh, "Voxonaut");
     SetTargetFPS(60);
     SetConfigFlags(FLAG_MSAA_4X_HINT);
 

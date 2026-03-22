@@ -35,8 +35,8 @@ private:
         Color titleCol = (currentWinMode == MODE_FULLSCREEN) ? GOLD : (currentWinMode == MODE_BORDERLESS ? SKYBLUE : LIGHTGRAY);
         float floatAnim = sinf(menuTime * 1.5f) * (15.0f * scale);
         int titleSize = (int)(70 * scale);
-        DrawText("[REDACTED]", sw/2 - MeasureText("[REDACTED]", titleSize)/2 + (int)(4*scale), (int)(120*scale) + (int)floatAnim + (int)(4*scale), titleSize, Fade(DARKBLUE, 0.5f));
-        DrawText("[REDACTED]", sw/2 - MeasureText("[REDACTED]", titleSize)/2, (int)(120*scale) + (int)floatAnim, titleSize, titleCol);
+        DrawText("VOXONAUT", sw/2 - MeasureText("VOXONAUT", titleSize)/2 + (int)(4*scale), (int)(120*scale) + (int)floatAnim + (int)(4*scale), titleSize, Fade(DARKBLUE, 0.5f));
+        DrawText("VOXONAUT", sw/2 - MeasureText("VOXONAUT", titleSize)/2, (int)(120*scale) + (int)floatAnim, titleSize, titleCol);
         DrawRectangle(sw/2 - (int)(120*scale), (int)(205*scale), (int)(240*scale), (int)(2*scale), titleCol);
         DrawText("PLANETARY ENGINEERING INITIATIVE", sw/2 - MeasureText("PLANETARY ENGINEERING INITIATIVE", (int)(16*scale))/2, (int)(215*scale), (int)(16*scale), GRAY);
         const char* modeText = (currentWinMode == MODE_FULLSCREEN) ? "PROTOCOL: HIGH-PERFORMANCE FULLSCREEN" : (currentWinMode == MODE_BORDERLESS ? "PROTOCOL: IMMERSIVE BORDERLESS" : "PROTOCOL: STANDARD WINDOWED");
